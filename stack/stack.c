@@ -25,13 +25,12 @@ int pop(Struct *s)
 }
 
 int peek(Struct *s) {
-    if(s->top == -1) {
-        printf("Array is waste");
-        return -1;
+    if (s->top == -1) {
+        printf("Stack is empty\n");
+        return -1; 
     }
-    return s->stack[s->top];
+    return s->stack[s->top];  
 }
-
 int empty(Struct *s)
 {
     return s->top == -1;
